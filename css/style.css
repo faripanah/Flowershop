@@ -1,0 +1,358 @@
+#navbar{
+    display: flex;   /* show horizantal*/
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px  80px;
+    background-color: rgb(230, 248, 242);
+    box-shadow: 0  5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;  /*static navbar*/
+    top: 0;
+    left: 0;
+    margin-bottom: 0;    /*????????for distance with another section*/
+}
+
+#navbar ul li{
+    list-style:none;  /*remove dots*/
+    margin: 10px;
+    float: right;
+    padding: 0  20px;   /* space between items */
+    font-style:italic ;
+
+}
+/*remove underline*/
+#navbar li a{
+    text-decoration: none;
+}
+
+#navbar a{
+    display:flexbox;
+    margin-right: auto;  /*show  logo in the right side  */
+     
+}
+.nav-link:hover{   /*is used to select elemnts when you mouse over them */
+    background-color: aquamarine;
+
+}
+
+#navbar li a.active::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: rgb(155, 116, 240);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/*-----End of navbar---------*/
+#hero{
+    background-image: url(../img/background/background-pic.jpg);
+    height: 90vb;
+    width: 100%;
+    background-size: cover;  /*img set in center*/
+    background-position: top 25% right 0;  /*img set in center  */
+    /*set text in center of home page*/
+    padding: 0 80px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#hero h1{
+    padding: 20px 50px ;
+    color: aquamarine;
+    font-size:40px;
+   
+}
+#hero h4{
+    padding: 0px 50px ;
+    color: azure;
+    font-size:30px;
+    margin-top: 5px;
+}
+#hero button{
+    cursor: pointer;
+    padding: 5px 10px ;
+    background-color: bisque;
+    cursor: pointer;
+    font-size: 15px ;
+    font-weight: 700;
+    font-style:oblique ;
+    color: rgb(233, 29, 29);
+    margin-left: 100px;
+}
+
+/*-------features------- */
+#feature .fe-box1 img{
+    height: 50vh;
+     width: 100%; 
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+   
+}
+
+#feature .fe-box1 {
+    width: 300px;
+    text-align: center;
+    padding: 0px 20px 20px 10px;
+    box-shadow: 10px 10px 30px rgb(246, 96, 96) ;
+}
+
+#feature .fe-box1 h4{
+    font-size: medium;
+    font-style: italic;
+}
+
+#feature{   /*set features div in one row*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*----sign up----*/
+
+#newsletter{     /*set div content in one row*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+    
+}
+
+#newsletter .newstext{
+    color: white;
+}
+
+#newsletter button{
+    background-color: rgb(84, 123, 6);
+    color: white;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    
+}
+
+/*------footer-----*/
+
+#pg-footer{
+    background-color: black;
+    margin-top: 10px;
+    
+}
+
+#pg-footer h3 {
+    color: white;
+}
+#pg-footer h4{
+    color: white;
+} 
+#pg-footer p{
+    color: white;
+} 
+#pg-footer .icon{
+    color: white;
+}
+footer{        /*  set footer*/
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{     /*   set footer colums*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  
+}
+/*-----shop page------*/
+#product {
+    text-align: center;
+}
+/*put img in box*/
+#product .pro{
+    width: 23%;
+    height: 50%;
+    min-width: 250px;
+    padding: 1em;
+    border: 1px solid rgb(133, 133, 240);
+    margin: 10px 10px;
+   /* float: left;
+    /* box-sizing: border-box; */
+   
+
+}
+
+#product .pro:hover{         /*when you mouse over it*/
+    border: 2px solid rgb(133, 133, 240);     
+
+}
+#product .pro img{               /*?????????????????*/
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    height: 50vh;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#product .pro .description i{
+   font-size: 12px;
+   color: rgb(228, 228, 27);
+   
+}
+#product .pro .description .star{
+   margin-top: 1px;
+}
+/*add all product and layout*/
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;    /*this set flex item onto multiple lines*/
+    
+
+}
+
+/*single product page*/
+#prodetails .pro-image{
+    width: 30%;
+    margin-right: 50px;
+
+}
+/*make small images in one row*/
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:100%;
+    margin-left: 0;       /*???????????????*/
+
+}
+.small-images{
+    display: flex;
+    width: 100%;
+    margin-left: 3px;
+    flex-basis: 24%;  /*put space between small images*/
+    cursor: pointer;
+    border: 1px solid rgb(177, 101, 247);
+    padding-left: 50px;
+   
+}
+.small-img-col{
+    width: 50px;
+    height: 50px;
+
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .pro-details{
+    width: 50%;
+    padding-top: 40px;
+    margin-left: 50px;
+}
+.pro-details p{
+    font-style: italic;
+}
+.pro-details .btn-primary {
+    padding: 0.75rem  0.375rem;
+    background-color: blue;
+    font-weight: 600;
+    box-shadow: 2px;
+    color:white;
+    border-radius: 5rem;
+    cursor: pointer;
+   
+    
+  }
+
+.pro-details .btn-primary:hover{
+    
+    color: black;
+    border-color: brown;
+    background-color: aquamarine;
+    
+  }
+.pro-details input{
+    width: 50px;
+    height: 30px;
+}
+
+
+/*contact page*/ 
+#landing{
+   width: 100%;
+   height: 50vh;
+   background: url(../img/background/background2.jpg);
+   background-size: cover;
+   margin-top: 0;
+  
+
+}
+#landing h1{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 45px;
+}
+#landing h3{
+    text-align: center;
+    color:white;
+    padding: top 40px; ;
+
+}
+
+/*second section in contact page :make in same row*/
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#contact-details .con-details h2{
+   margin: 5px 0;
+   font-size: 26px;
+}
+#contact-details .con-details li{
+    list-style: none;  /*  remove "." back of the list items*/
+    
+    display:flex;
+   
+}
+/* icons and them text in one row:*/
+#contact-details .con-details li i{
+    padding-right: 22px;
+    font-size: 14px;
+}
+#contact-details .con-details li p{
+    margin: 0;
+   font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
